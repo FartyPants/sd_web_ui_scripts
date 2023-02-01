@@ -3,4 +3,4 @@
 Some scripts:
 
 hallucinate
-- simply swaps 
+- simply swaps negative and positive prompts for giggles
