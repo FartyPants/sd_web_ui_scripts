@@ -4,6 +4,7 @@ Some scripts:
 
 Hallucinate
 - simply swaps negative and positive prompts for giggles. Best with complicated prompts - but don't blame me for the horror show
+
 ![image](https://user-images.githubusercontent.com/23346289/215936413-73754002-0b16-4125-9d4e-766084aad776.png)
 
 
