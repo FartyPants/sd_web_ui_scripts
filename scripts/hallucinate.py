@@ -1,8 +1,7 @@
-from modules.shared import opts, cmd_opts, state
-from modules.processing import Processed, StableDiffusionProcessingImg2Img, process_images, images
+from modules.shared import opts
+from modules.processing import Processed, process_images, images
 import modules.scripts as scripts
 import gradio as gr
-from random import randint
 
 class Script(scripts.Script):
     def title(self):
