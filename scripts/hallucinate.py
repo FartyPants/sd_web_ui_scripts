@@ -8,7 +8,7 @@ class Script(scripts.Script):
         return "Hallucinate"
 
     def ui(self, is_img2img):
-        enable_m = gr.Checkbox(label="Yes please, Hallucinate", value=True, elem_id=self.elem_id("enable"))
+        enable_m = gr.Checkbox(label="Yes please, Hallucinate about Monsters", value=True, elem_id=self.elem_id("enable"))
        
         return [enable_m]
 
