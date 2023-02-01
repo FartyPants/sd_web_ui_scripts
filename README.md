@@ -3,6 +3,6 @@
 Some scripts:
 
 hallucinate
-- simply swaps negative and positive prompts for giggles
+- simply swaps negative and positive prompts for giggles. Best with complicated prompts - but don't blame me for the horror show
 
-![image](https://user-images.githubusercontent.com/23346289/215924346-6a30954c-4237-46f6-a4f3-dbed30f0d8b8.png)
+![image](https://user-images.githubusercontent.com/23346289/215925153-f16bf3ed-1865-4831-b854-8b791a8babc3.png)
