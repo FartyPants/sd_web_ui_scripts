@@ -15,9 +15,11 @@ class Script(scripts.Script):
 
     def run(self, p,enable_m):
        
-        initial_prompt =  p.prompt
-        p.prompt = p.negative_prompt
-        p.negative_prompt = initial_prompt
+        if (enable_m==True):
+            initial_prompt =  p.prompt
+            p.prompt = p.negative_prompt
+            p.negative_prompt = initial_prompt
+
         proc = process_images(p)
 
         return Processed(p, proc.images, p.seed, "")
