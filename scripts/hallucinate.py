@@ -13,12 +13,15 @@ class Script(scripts.Script):
         return [enable_m]
 
     def run(self, p,enable_m):
-       
+        all_prompts = []
+        infotexts = []
+
         if (enable_m==True):
             initial_prompt =  p.prompt
             p.prompt = p.negative_prompt
             p.negative_prompt = initial_prompt
 
         proc = process_images(p)
-
-        return Processed(p, proc.images, p.seed, "")
+        all_prompts = proc.all_prompts
+        infotexts = proc.infotexts
+        return Processed(p, proc.images, p.seed, "",all_prompts=all_prompts,infotexts=infotexts)
