@@ -15,3 +15,6 @@ Some scripts:
 
 ## Mr. Positivity
 - requires both positive and negative prompts. As you move the optimism slider Mr. positivity will start dropping words from the positive prompt and repllacing them with words from the negative prompt.
+
+![image](https://user-images.githubusercontent.com/23346289/216221216-e7f91634-7acf-4eae-a2ef-71d7a569323b.png)
+
