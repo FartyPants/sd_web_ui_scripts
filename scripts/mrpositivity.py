@@ -40,6 +40,8 @@ class Script(scripts.Script):
             for i, word in enumerate(words_neg):
                 if random.random() < weight/100.0:
                     p.prompt = p.prompt+" "+ word
+                else:
+                    p.negative_prompt = p.negative_prompt+" "+ word    
 
 
         proc = process_images(p)
