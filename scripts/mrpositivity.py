@@ -9,12 +9,15 @@ class Script(scripts.Script):
         return "Mr. Positivity"
 
     def ui(self, is_img2img):
-        enable_m = gr.Checkbox(label="Enable Mr. Positivity (needs negative prompts)", value=True, elem_id=self.elem_id("enable"))
+        with gr.Row():
+            enable_m = gr.Checkbox(label="Enable Mr. Positivity (needs negative prompts)", value=True, elem_id=self.elem_id("enable"))
+            noneg = gr.Checkbox(label="Clear negative prompt", value=False, elem_id=self.elem_id("noneg"))
+
         weight = gr.Slider(label="Mr. Positivity's optimism", minimum=0, mmaximum=100, value=50, step=1, elem_id=self.elem_id("weight"))
        
-        return [enable_m,weight]
+        return [enable_m,weight,noneg]
 
-    def run(self, p,enable_m,weight):
+    def run(self, p,enable_m,weight,noneg):
         all_prompts = []
         infotexts = []
 
@@ -41,7 +44,8 @@ class Script(scripts.Script):
                 if random.random() < weight/100.0:
                     p.prompt = p.prompt+" "+ word
                 else:
-                    p.negative_prompt = p.negative_prompt+" "+ word    
+                    if (noneg==False):
+                        p.negative_prompt = p.negative_prompt+" "+ word    
 
 
         proc = process_images(p)
