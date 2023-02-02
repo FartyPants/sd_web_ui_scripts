@@ -18,3 +18,5 @@ Some scripts:
 
 ![image](https://user-images.githubusercontent.com/23346289/216221216-e7f91634-7acf-4eae-a2ef-71d7a569323b.png)
 
+Tip: add two very unrelated prompts to positive and negative box, set slider to 50, Check Clear negative prompt - and you get a recipe for random surrealism. 
+
